@@ -24,3 +24,32 @@ end
 def reverse_array(array)
    array.reverse 
 end
+
+#Question Six: 
+def kesha_maker(array)
+    array.each do |num|
+        num [2] = "$"
+    end
+end
+
+#Question Seven:
+def find_a(array)
+    array.find_all do |number|
+    number[0] == "a"
+end
+end
+
+#Question Eight: 
+def sum_array (array)
+    array.inject(0){|sum,x| sum + x}
+end
+
+def add_s(array)
+    array.collect do |word|
+if array[1] == word 
+    word 
+else
+    word + "s"
+end
+end 
+end 
